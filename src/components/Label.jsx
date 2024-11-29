@@ -1,3 +1,3 @@
 export default function Label({ content }) {
-  return <span className="label">{content}</span>;
+  return <span className={content}>{content}</span>;
 }

@@ -1,4 +1,5 @@
 import Button from "./Button/Button";
+import Label from "./Label";
 import { posts } from "../db/posts";
 const placeholder = "https://placehold.co/600x400";
 
@@ -13,6 +14,7 @@ export default function Card({ title, children, img, content }) {
             alt="..."
           />
           <div className="card-body">
+            <Label content="css"></Label>
             {/* voglio stampare qui le labels */}
             {children}
             <h5 className="card-title">{title}</h5>

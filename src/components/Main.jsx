@@ -14,9 +14,11 @@ export default function Main() {
             .map((post) => (
               <Card
                 key={post.id}
+                id={post.id}
                 title={post.title}
                 img={post.img}
                 content={post.content}
+                tags={post.tags}
               >
                 {/* voglio avere qui le labels e passarle alle card come 'children' */}
               </Card>

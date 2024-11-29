@@ -1,3 +1,3 @@
-export default function Label({ content }) {
-  return <span className={content}>{content}</span>;
+export default function Label({ children }) {
+  return <span className={"label " + children}>{children}</span>;
 }

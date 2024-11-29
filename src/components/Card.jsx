@@ -1,5 +1,7 @@
 import Button from "./Button/Button";
-const placeholder = "";
+import Label from "./Label";
+import { posts } from "../db/posts";
+const placeholder = "https://placehold.co/600x400";
 
 export default function Card({ title, children, img }) {
   return (
@@ -7,11 +9,12 @@ export default function Card({ title, children, img }) {
       <div className="d-flex justify-content-center p-3">
         <div className="card my-3">
           <img
-            src={img || "https://placehold.co/600x400"}
+            src={img || placeholder}
             className="card-img-top img-fluid"
             alt="..."
           />
           <div className="card-body">
+            <Label></Label>
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{children}</p>
             <Button></Button>

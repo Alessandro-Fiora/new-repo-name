@@ -1,4 +1,6 @@
 import Card from "./Card";
+import Label from "./Label";
+
 import { posts } from "../db/posts";
 
 export default function Main() {
@@ -10,8 +12,13 @@ export default function Main() {
           {posts
             .filter((post) => post.published)
             .map((post) => (
-              <Card key={post.id} title={post.title} img={post.img}>
-                {post.content}
+              <Card
+                key={post.id}
+                title={post.title}
+                img={post.img}
+                content={post.content}
+              >
+                {/* voglio avere qui le labels e passarle alle card come 'children' */}
               </Card>
             ))}
         </div>

@@ -10,12 +10,10 @@ export default function Main() {
           {posts
             .filter((post) => post.published)
             .map((post) => (
-              <Card title={post.title} img={post.img}>
+              <Card key={post.id} title={post.title} img={post.img}>
                 {post.content}
               </Card>
             ))}
-          {/* filtrare cards con cards.filter e generarle con map(card => <Card title = card.title img = card.img>DESCRIZIONE</Card>) */}
-          {/* passare i parametri dei post alle card */}
         </div>
       </div>
     </main>

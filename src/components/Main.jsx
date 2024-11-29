@@ -10,7 +10,7 @@ const renderFilters = () => {
       if (!filters.includes(tag)) filters.push(tag);
     });
   });
-  return filters.map((filter) => <Label>{filter}</Label>);
+  return filters.map((filter) => <Label key={filter}>{filter}</Label>);
 };
 
 export default function Main() {

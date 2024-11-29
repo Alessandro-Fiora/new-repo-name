@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-color: rgb(231, 231, 231);
 }
 
 .wrapper {
@@ -10,6 +10,7 @@ body {
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
   margin-right: 0.5rem;
+  background-color: grey;
 }
 
 .html {
